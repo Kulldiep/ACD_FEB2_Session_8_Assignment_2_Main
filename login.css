@@ -1,0 +1,10 @@
+
+
+input#uname, input#upass, input#email {
+    width: 140px;
+    margin: 1px 0px 0px 0px;
+} 
+
+button#back {
+    margin-left: 90px;
+}
