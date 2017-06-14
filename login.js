@@ -1,18 +1,18 @@
 function aback() {
-	var aback= 'index.html'
 	
-    window.open(aback , "_self");
+	
+    window.open('index.html' , "_self");
 }
 function log() {
-	var log= 'login.html'
 	
-    window.open(log , "_self");
+	
+    window.open('login.html' , "_self");
    
 }
 function enter() {
-	var enter= 'sign-up.html'
 	
-    window.open(enter , "_self");
+	
+    window.open('sign-up.html' , "_self");
    
 }
 

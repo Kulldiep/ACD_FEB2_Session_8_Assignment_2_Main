@@ -5,13 +5,18 @@
 <div align="center">
 <h1>Local Storage</h1><br>
 <div align="center">Login</div>
-<form method="get">
-<input type="text" id="uname" value="" placeholder="Username"><br><br>
-<input type="password" id="upass" value="" placeholder="Password" required><br><br>
-<button type="submit" value="loginValidate" onClick="validate()">Submit Query</button>
+<form id="getval" method="get">
+<input type="text" id="userName" value="" placeholder="Username"><br><br>
+<input type="password" id="userPw" value="" placeholder="Password" required><br><br>
+<button type="submit" value="loginValidate" onclick="validate()">Submit Query</button>
 </form>
-<br><button type="submit" onclick="aback()">Back</button>
+<div>
+<br>
+  <div><div id="invalid">&nbsp</div>
+  <button type="submit" id="callback" onclick="aback()">Back</button>
+  </div>
 </div>
 <script type="text/javascript" src="login.js"></script>
+<script type="text/javascript" src="storage.js"></script>
 </body>
 </html>

@@ -1,19 +1,20 @@
-var name = document.getElementById('name');
-var pw = document.getElementById('pw');.
+var usname = document.getElementById('sname');
+var pw = document.getElementById('spass');
 function store() {
-    localStorage.setItem('name', name.value);
-    localStorage.setItem('pw', pw.value);
+    localStorage.setItem('stname', usname.value);
+    localStorage.setItem('stpw', pw.value);
 }
-function check() {
- var storedName = localStorage.getItem('name');
-    var storedPw = localStorage.getItem('pw');
+function validate() {
+ var storedName = localStorage.getItem('stname');
+    var storedPw = localStorage.getItem('stpw');
 
  var userName = document.getElementById('userName');
     var userPw = document.getElementById('userPw');
 
-if(userName.value !== storedName || userPw.value !== storedPw) {
-        alert('ERROR');
+if(userName.value == storedName && userPw.value == storedPw) {
+window.open('welcome.html');
     }else {
-        alert('You are loged in.');
+		document.getElementById("invalid").innerHTML="username";
+        window.stop();
     }
 }

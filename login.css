@@ -1,10 +1,21 @@
 
 
-input#uname, input#upass, input#email {
-    width: 140px;
+input#sname, input#spass, input#email, input#userName, input#userPw {
+    width: 155px;
     margin: 1px 0px 0px 0px;
 } 
 
 button#back {
-    margin-left: 90px;
+    margin-left: 112px;
+}
+
+button#callback {
+    float: left;
+    margin-left: 58px;
+}
+
+div#invalid {
+    margin-left: 150px;
+    width: 222.6px;
+    float: left;
 }
