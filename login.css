@@ -11,11 +11,12 @@ button#back {
 
 button#callback {
     float: left;
-    margin-left: 58px;
+    margin-left: 85px;
 }
 
 div#invalid {
-    margin-left: 150px;
-    width: 222.6px;
+	width: 222.6px;
+    margin-left: 400px;
+    
     float: left;
 }

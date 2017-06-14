@@ -3,6 +3,7 @@ var pw = document.getElementById('spass');
 function store() {
     localStorage.setItem('stname', usname.value);
     localStorage.setItem('stpw', pw.value);
+	
 }
 function validate() {
  var storedName = localStorage.getItem('stname');
@@ -12,9 +13,10 @@ function validate() {
     var userPw = document.getElementById('userPw');
 
 if(userName.value == storedName && userPw.value == storedPw) {
-window.open('welcome.html');
+window.open('welcome.html', "_self");
+return false;
     }else {
-		document.getElementById("invalid").innerHTML="username";
-        window.stop();
+		document.getElementById("invalid").innerHTML="username or password is incorrect";
+        return false;
     }
 }
